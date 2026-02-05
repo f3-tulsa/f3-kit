@@ -1,0 +1,6 @@
+# Cloudflare Pages configuration
+name = "f3-web"
+compatibility_date = "2025-01-01"
+
+[vars]
+PUBLIC_API_URL = "https://f3-api.<your-subdomain>.workers.dev"

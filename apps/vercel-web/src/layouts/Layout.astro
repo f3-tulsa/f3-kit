@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="F3 - Fitness, Fellowship, Faith" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-zinc-900 text-zinc-100 min-h-screen">
+    <nav class="bg-zinc-800 border-b border-zinc-700">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="text-2xl font-bold text-red-500">F3</a>
+        <div class="flex gap-6">
+          <a href="/" class="hover:text-red-400 transition-colors">Home</a>
+          <a href="/workouts" class="hover:text-red-400 transition-colors">Workouts</a>
+          <a href="/about" class="hover:text-red-400 transition-colors">About</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <slot />
+    </main>
+    <footer class="bg-zinc-800 border-t border-zinc-700 mt-16">
+      <div class="max-w-6xl mx-auto px-4 py-8 text-center text-zinc-400">
+        <p>&copy; {new Date().getFullYear()} F3 Region. Free to all men.</p>
+      </div>
+    </footer>
+  </body>
+</html>

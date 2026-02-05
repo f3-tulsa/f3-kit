@@ -1,0 +1,6 @@
+name: f3-kit-vercel
+runtime:
+  name: nodejs
+  options:
+    typescript: true
+description: F3 Platform infrastructure on Vercel + Supabase

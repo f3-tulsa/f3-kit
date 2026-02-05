@@ -1,0 +1,75 @@
+---
+import Layout from '~/layouts/Layout.astro';
+---
+
+<Layout title="F3 - Fitness, Fellowship, Faith">
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl md:text-7xl font-black mb-6">
+        <span class="text-red-500">F3</span> Region
+      </h1>
+      <p class="text-xl md:text-2xl text-zinc-300 mb-8">
+        Free workout group for men. Peer-led. Outdoors. Rain or shine.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/workouts"
+          class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+        >
+          Find a Workout
+        </a>
+        <a
+          href="/about"
+          class="bg-zinc-700 hover:bg-zinc-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 bg-zinc-800">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">The Three F's</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="text-4xl mb-4">💪</div>
+          <h3 class="text-xl font-bold text-red-400 mb-2">Fitness</h3>
+          <p class="text-zinc-400">
+            Free, peer-led workouts in outdoor locations. No gym membership required.
+          </p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="text-xl font-bold text-red-400 mb-2">Fellowship</h3>
+          <p class="text-zinc-400">
+            Build authentic relationships with men who push you to be better.
+          </p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-4">🙏</div>
+          <h3 class="text-xl font-bold text-red-400 mb-2">Faith</h3>
+          <p class="text-zinc-400">
+            Leave each workout better than you arrived — body, mind, and spirit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Post?</h2>
+      <p class="text-zinc-300 mb-8">
+        All men are welcome. Just show up — no registration required.
+        Find a workout time that works for you and EH (encourage, invite) a friend.
+      </p>
+      <a
+        href="/workouts"
+        class="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+      >
+        View Schedule
+      </a>
+    </div>
+  </section>
+</Layout>

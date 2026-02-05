@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "f3-model": ["./packages/f3-model/src/index.ts"],
+      "f3-repo": ["./packages/f3-repo/src/index.ts"],
+      "f3-contracts": ["./packages/f3-contracts/src/index.ts"],
+      "f3-domain": ["./packages/f3-domain/src/index.ts"],
+      "repo-d1": ["./adapters/repo-d1/src/index.ts"]
+    },
+    "noEmit": true
+  },
+  "include": [
+    "packages/*/src/**/*.ts",
+    "adapters/*/src/**/*.ts",
+    "apps/*/src/**/*.ts",
+    "infra/*/src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/dist/**"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "f3-kit",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "build:packages": "pnpm --filter f3-model build && pnpm --filter f3-repo build && pnpm --filter f3-contracts build && pnpm --filter f3-domain build && pnpm --filter f3-api build",
+    "build:adapters": "pnpm --filter repo-d1 build && pnpm --filter repo-supabase build",
+
+    "dev:api": "pnpm --filter cf-api dev",
+    "dev:slack": "pnpm --filter cf-slack dev",
+    "dev:web": "pnpm --filter cf-web dev",
+    "dev:pax": "pnpm --filter cf-pax dev",
+
+    "deploy:api": "pnpm --filter cf-api deploy",
+    "deploy:slack": "pnpm --filter cf-slack deploy",
+    "deploy:web": "pnpm --filter cf-web deploy",
+    "deploy:pax": "pnpm --filter cf-pax deploy",
+    "deploy:cf": "pnpm deploy:api && pnpm deploy:slack && pnpm deploy:web && pnpm deploy:pax",
+
+    "infra:deploy": "pnpm --filter infra-cf deploy",
+    "infra:destroy": "pnpm --filter infra-cf destroy",
+
+    "infra:vercel:deploy": "pnpm --filter infra-vercel deploy",
+    "infra:vercel:destroy": "pnpm --filter infra-vercel destroy",
+    "infra:vercel:preview": "pnpm --filter infra-vercel preview",
+
+    "db:migrate:local": "pnpm --filter cf-api d1:migrate:local",
+    "db:migrate:remote": "pnpm --filter cf-api d1:migrate:remote",
+
+    "dev:vercel-api": "pnpm --filter vercel-api dev",
+    "dev:vercel-slack": "pnpm --filter vercel-slack dev",
+    "dev:vercel-web": "pnpm --filter vercel-web dev",
+    "dev:vercel-pax": "pnpm --filter vercel-pax dev",
+
+    "deploy:vercel-api": "pnpm --filter vercel-api deploy",
+    "deploy:vercel-slack": "pnpm --filter vercel-slack deploy",
+    "deploy:vercel-web": "pnpm --filter vercel-web deploy",
+    "deploy:vercel-pax": "pnpm --filter vercel-pax deploy",
+    "deploy:vercel": "pnpm deploy:vercel-api && pnpm deploy:vercel-slack && pnpm deploy:vercel-web && pnpm deploy:vercel-pax",
+
+    "typecheck": "tsc --noEmit"
+  }
+}

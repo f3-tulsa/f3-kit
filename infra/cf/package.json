@@ -1,0 +1,15 @@
+{
+  "name": "infra-cf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "bun run src/alchemy.run.ts",
+    "destroy": "bun run src/alchemy.run.ts --destroy"
+  },
+  "dependencies": {
+    "alchemy": "^0.9.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,10 @@
+# Cloudflare Workers local development variables
+# Copy to .dev.vars and fill in values
+# .dev.vars is gitignored - never commit real secrets!
+
+# ============================================================================
+# API Authentication (optional)
+# ============================================================================
+# Shared secret for machine-to-machine auth (e.g., Slack -> API)
+# If not set, auth is disabled (open access)
+API_TOKEN=your-secret-token-here

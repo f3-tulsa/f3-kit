@@ -1,0 +1,18 @@
+# Cloudflare Workers local development variables
+# Copy to .dev.vars and fill in values
+# .dev.vars is gitignored - never commit real secrets!
+
+# ============================================================================
+# Slack App Credentials (required)
+# Get these from https://api.slack.com/apps -> Your App -> Basic Information
+# ============================================================================
+SLACK_SIGNING_SECRET=your-signing-secret-from-slack
+
+# Bot token from OAuth & Permissions page (starts with xoxb-)
+SLACK_BOT_TOKEN=xoxb-your-bot-token
+
+# ============================================================================
+# API Authentication (required for API calls)
+# ============================================================================
+# Must match the API_TOKEN in cf-api/.dev.vars
+API_TOKEN=your-secret-token-here

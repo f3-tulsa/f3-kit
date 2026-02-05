@@ -1,0 +1,26 @@
+{
+  "name": "f3-api",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "f3-model": "workspace:*",
+    "f3-repo": "workspace:*",
+    "f3-domain": "workspace:*",
+    "f3-contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

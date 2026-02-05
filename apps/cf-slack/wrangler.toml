@@ -1,0 +1,14 @@
+name = "f3-slack"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[vars]
+APP_ENV = "development"
+# API_BASE_URL will point to the deployed cf-api worker
+API_BASE_URL = "http://localhost:8787"
+
+# Secrets (set via: wrangler secret put <NAME>)
+# SLACK_SIGNING_SECRET - from Slack app settings
+# SLACK_BOT_TOKEN - xoxb-... token
+# API_TOKEN - shared secret for API auth
+

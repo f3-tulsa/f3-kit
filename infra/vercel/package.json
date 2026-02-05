@@ -1,0 +1,18 @@
+{
+  "name": "infra-vercel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "pulumi up --yes",
+    "destroy": "pulumi destroy --yes",
+    "preview": "pulumi preview"
+  },
+  "dependencies": {
+    "@pulumi/pulumi": "^3.100.0",
+    "@pulumiverse/vercel": "^1.14.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0"
+  }
+}

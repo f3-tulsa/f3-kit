@@ -1,0 +1,21 @@
+{
+  "name": "vercel-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "tsc -p tsconfig.build.json",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "hono": "^4.5.0",
+    "@hono/node-server": "^1.13.0",
+    "f3-api": "workspace:*",
+    "repo-supabase": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0",
+    "vercel": "^37.0.0"
+  }
+}

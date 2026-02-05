@@ -1,0 +1,12 @@
+name = "f3-api"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[vars]
+APP_ENV = "development"
+
+# D1 Database - ID will be set by Alchemy or manually after creation
+[[d1_databases]]
+binding = "DB"
+database_name = "f3-db"
+database_id = "${D1_DATABASE_ID}"

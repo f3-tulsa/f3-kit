@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Workouts" description="Find F3 workouts near you. Free outdoor fitness every morning.">
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-display font-bold mb-4">Find a Workout</h1>
+      <p class="text-gray-400 mb-8 max-w-2xl">
+        All F3 workouts are free and open to any man. Just show up at the time and place listed below.
+        No registration required.
+      </p>
+
+      <!-- Workout Schedule -->
+      <div class="grid gap-4">
+        <!-- Placeholder cards - will be replaced with dynamic data -->
+        <div class="bg-f3-gray/20 rounded-lg p-6 border border-f3-gray/30">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-display font-semibold text-f3-red">The Foundry</h3>
+              <p class="text-gray-400">Monday, Wednesday, Friday @ 5:30 AM</p>
+              <p class="text-sm text-gray-500 mt-1">Central Park Pavilion</p>
+            </div>
+            <div class="flex gap-2">
+              <span class="px-3 py-1 bg-f3-red/20 text-f3-red text-sm rounded">Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-f3-gray/20 rounded-lg p-6 border border-f3-gray/30">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-display font-semibold text-f3-red">The Grind</h3>
+              <p class="text-gray-400">Tuesday, Thursday @ 5:30 AM</p>
+              <p class="text-sm text-gray-500 mt-1">High School Track</p>
+            </div>
+            <div class="flex gap-2">
+              <span class="px-3 py-1 bg-f3-red/20 text-f3-red text-sm rounded">Run</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-f3-gray/20 rounded-lg p-6 border border-f3-gray/30">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-display font-semibold text-f3-red">The Ruck</h3>
+              <p class="text-gray-400">Saturday @ 6:00 AM</p>
+              <p class="text-sm text-gray-500 mt-1">Trail Head Parking Lot</p>
+            </div>
+            <div class="flex gap-2">
+              <span class="px-3 py-1 bg-f3-red/20 text-f3-red text-sm rounded">Ruck</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 p-6 bg-f3-gray/10 rounded-lg border border-f3-gray/30">
+        <h3 class="font-display font-semibold mb-2">First time?</h3>
+        <p class="text-gray-400 text-sm">
+          Just show up 5 minutes early. Look for the group of men gathering. Introduce yourself
+          and let them know it's your first time—they'll take care of you. All fitness levels welcome.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
